@@ -1,0 +1,2 @@
+module CbAcquisitionsHelper
+end

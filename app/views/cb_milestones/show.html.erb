@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Object:</strong>
+  <%= @cb_milestone.object %>
+</p>
+
+<p>
+  <strong>Milestone at:</strong>
+  <%= @cb_milestone.milestone_at %>
+</p>
+
+<p>
+  <strong>Milestone code:</strong>
+  <%= @cb_milestone.milestone_code %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cb_milestone.description %>
+</p>
+
+<p>
+  <strong>Source url:</strong>
+  <%= @cb_milestone.source_url %>
+</p>
+
+<p>
+  <strong>Source description:</strong>
+  <%= @cb_milestone.source_description %>
+</p>
+
+<%= link_to 'Edit', edit_cb_milestone_path(@cb_milestone) %> |
+<%= link_to 'Back', cb_milestones_path %>

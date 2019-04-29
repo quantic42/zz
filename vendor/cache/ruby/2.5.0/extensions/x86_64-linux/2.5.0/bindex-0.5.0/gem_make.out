@@ -1,0 +1,15 @@
+current directory: /home/adtaylor43/CSC-4610-Fall-2018-SAIC-Collins-group/vendor/cache/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/usr/local/rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20190425-5795-1xdodxo.rb extconf.rb
+creating Makefile
+
+current directory: /home/adtaylor43/CSC-4610-Fall-2018-SAIC-Collins-group/vendor/cache/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/adtaylor43/CSC-4610-Fall-2018-SAIC-Collins-group/vendor/cache/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/adtaylor43/CSC-4610-Fall-2018-SAIC-Collins-group/vendor/cache/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20190425-5795-bju5p1/bindex

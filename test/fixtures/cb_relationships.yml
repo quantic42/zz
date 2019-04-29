@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  relationship: one
+  person_object: one
+  relationship_object: one
+  start_at: 2019-03-26
+  end_at: 2019-03-26
+  is_past: 1
+  sequence: 1
+  title: MyString
+
+two:
+  relationship: two
+  person_object: two
+  relationship_object: two
+  start_at: 2019-03-26
+  end_at: 2019-03-26
+  is_past: 1
+  sequence: 1
+  title: MyString

@@ -1,0 +1,165 @@
+<%= form_for(@cb_object) do |f| %>
+  <% if @cb_object.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cb_object.errors.count, "error") %> prohibited this cb_object from being saved:</h2>
+
+      <ul>
+      <% @cb_object.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :entity_type %><br>
+    <%= f.text_field :entity_type %>
+  </div>
+  <div class="field">
+    <%= f.label :entity_id %><br>
+    <%= f.text_field :entity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :parent_id %><br>
+    <%= f.text_field :parent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :normalized_name %><br>
+    <%= f.text_field :normalized_name %>
+  </div>
+  <div class="field">
+    <%= f.label :permalink %><br>
+    <%= f.text_field :permalink %>
+  </div>
+  <div class="field">
+    <%= f.label :category_code %><br>
+    <%= f.text_field :category_code %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :founded_at %><br>
+    <%= f.date_select :founded_at %>
+  </div>
+  <div class="field">
+    <%= f.label :closed_at %><br>
+    <%= f.date_select :closed_at %>
+  </div>
+  <div class="field">
+    <%= f.label :domain %><br>
+    <%= f.text_field :domain %>
+  </div>
+  <div class="field">
+    <%= f.label :homepage_url %><br>
+    <%= f.text_field :homepage_url %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter_username %><br>
+    <%= f.text_field :twitter_username %>
+  </div>
+  <div class="field">
+    <%= f.label :logo_url %><br>
+    <%= f.text_field :logo_url %>
+  </div>
+  <div class="field">
+    <%= f.label :logo_width %><br>
+    <%= f.number_field :logo_width %>
+  </div>
+  <div class="field">
+    <%= f.label :logo_height %><br>
+    <%= f.number_field :logo_height %>
+  </div>
+  <div class="field">
+    <%= f.label :short_description %><br>
+    <%= f.text_field :short_description %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :overview %><br>
+    <%= f.text_area :overview %>
+  </div>
+  <div class="field">
+    <%= f.label :tag_list %><br>
+    <%= f.text_field :tag_list %>
+  </div>
+  <div class="field">
+    <%= f.label :country_code %><br>
+    <%= f.text_field :country_code %>
+  </div>
+  <div class="field">
+    <%= f.label :state_code %><br>
+    <%= f.text_field :state_code %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :region %><br>
+    <%= f.text_field :region %>
+  </div>
+  <div class="field">
+    <%= f.label :first_investment_at %><br>
+    <%= f.date_select :first_investment_at %>
+  </div>
+  <div class="field">
+    <%= f.label :last_investment_at %><br>
+    <%= f.date_select :last_investment_at %>
+  </div>
+  <div class="field">
+    <%= f.label :investment_rounds %><br>
+    <%= f.number_field :investment_rounds %>
+  </div>
+  <div class="field">
+    <%= f.label :invested_companies %><br>
+    <%= f.number_field :invested_companies %>
+  </div>
+  <div class="field">
+    <%= f.label :first_funding_at %><br>
+    <%= f.date_select :first_funding_at %>
+  </div>
+  <div class="field">
+    <%= f.label :last_funding_at %><br>
+    <%= f.date_select :last_funding_at %>
+  </div>
+  <div class="field">
+    <%= f.label :funding_rounds %><br>
+    <%= f.number_field :funding_rounds %>
+  </div>
+  <div class="field">
+    <%= f.label :funding_total_usd %><br>
+    <%= f.text_field :funding_total_usd %>
+  </div>
+  <div class="field">
+    <%= f.label :first_milestone_at %><br>
+    <%= f.date_select :first_milestone_at %>
+  </div>
+  <div class="field">
+    <%= f.label :last_milestone_at %><br>
+    <%= f.date_select :last_milestone_at %>
+  </div>
+  <div class="field">
+    <%= f.label :milestones %><br>
+    <%= f.number_field :milestones %>
+  </div>
+  <div class="field">
+    <%= f.label :relationships %><br>
+    <%= f.number_field :relationships %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %><br>
+    <%= f.text_field :created_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

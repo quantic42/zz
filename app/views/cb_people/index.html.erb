@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cb People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Birthplace</th>
+      <th>Affiliation name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cb_people.each do |cb_person| %>
+      <tr>
+        <td><%= cb_person.object %></td>
+        <td><%= cb_person.first_name %></td>
+        <td><%= cb_person.last_name %></td>
+        <td><%= cb_person.birthplace %></td>
+        <td><%= cb_person.affiliation_name %></td>
+        <td><%= link_to 'Show', cb_person %></td>
+        <td><%= link_to 'Edit', edit_cb_person_path(cb_person) %></td>
+        <td><%= link_to 'Destroy', cb_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cb Person', new_cb_person_path %>

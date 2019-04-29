@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Object:</strong>
+  <%= @cb_person.object %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @cb_person.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @cb_person.last_name %>
+</p>
+
+<p>
+  <strong>Birthplace:</strong>
+  <%= @cb_person.birthplace %>
+</p>
+
+<p>
+  <strong>Affiliation name:</strong>
+  <%= @cb_person.affiliation_name %>
+</p>
+
+<%= link_to 'Edit', edit_cb_person_path(@cb_person) %> |
+<%= link_to 'Back', cb_people_path %>

@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cb Funding Rounds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Funding round</th>
+      <th>Object</th>
+      <th>Funded at</th>
+      <th>Funding round type</th>
+      <th>Funding round code</th>
+      <th>Raised amount usd</th>
+      <th>Raised amount</th>
+      <th>Raised currency code</th>
+      <th>Pre money valuation usd</th>
+      <th>Pre money valuation</th>
+      <th>Pre money currency code</th>
+      <th>Post money valuation usd</th>
+      <th>Post money valuation</th>
+      <th>Post money currency code</th>
+      <th>Participants</th>
+      <th>Is first round</th>
+      <th>Is last round</th>
+      <th>Source url</th>
+      <th>Source description</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cb_funding_rounds.each do |cb_funding_round| %>
+      <tr>
+        <td><%= cb_funding_round.funding_round %></td>
+        <td><%= cb_funding_round.object %></td>
+        <td><%= cb_funding_round.funded_at %></td>
+        <td><%= cb_funding_round.funding_round_type %></td>
+        <td><%= cb_funding_round.funding_round_code %></td>
+        <td><%= cb_funding_round.raised_amount_usd %></td>
+        <td><%= cb_funding_round.raised_amount %></td>
+        <td><%= cb_funding_round.raised_currency_code %></td>
+        <td><%= cb_funding_round.pre_money_valuation_usd %></td>
+        <td><%= cb_funding_round.pre_money_valuation %></td>
+        <td><%= cb_funding_round.pre_money_currency_code %></td>
+        <td><%= cb_funding_round.post_money_valuation_usd %></td>
+        <td><%= cb_funding_round.post_money_valuation %></td>
+        <td><%= cb_funding_round.post_money_currency_code %></td>
+        <td><%= cb_funding_round.participants %></td>
+        <td><%= cb_funding_round.is_first_round %></td>
+        <td><%= cb_funding_round.is_last_round %></td>
+        <td><%= cb_funding_round.source_url %></td>
+        <td><%= cb_funding_round.source_description %></td>
+        <td><%= cb_funding_round.created_by %></td>
+        <td><%= link_to 'Show', cb_funding_round %></td>
+        <td><%= link_to 'Edit', edit_cb_funding_round_path(cb_funding_round) %></td>
+        <td><%= link_to 'Destroy', cb_funding_round, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cb Funding Round', new_cb_funding_round_path %>

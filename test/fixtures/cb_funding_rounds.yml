@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  funding_round: one
+  object: one
+  funded_at: 2019-03-26
+  funding_round_type: MyString
+  funding_round_code: MyString
+  raised_amount_usd: 9.99
+  raised_amount: 9.99
+  raised_currency_code: MyString
+  pre_money_valuation_usd: 9.99
+  pre_money_valuation: 9.99
+  pre_money_currency_code: MyString
+  post_money_valuation_usd: 9.99
+  post_money_valuation: 9.99
+  post_money_currency_code: MyString
+  participants: 1
+  is_first_round: 1
+  is_last_round: 1
+  source_url: MyString
+  source_description: MyString
+  created_by: MyString
+
+two:
+  funding_round: two
+  object: two
+  funded_at: 2019-03-26
+  funding_round_type: MyString
+  funding_round_code: MyString
+  raised_amount_usd: 9.99
+  raised_amount: 9.99
+  raised_currency_code: MyString
+  pre_money_valuation_usd: 9.99
+  pre_money_valuation: 9.99
+  pre_money_currency_code: MyString
+  post_money_valuation_usd: 9.99
+  post_money_valuation: 9.99
+  post_money_currency_code: MyString
+  participants: 1
+  is_first_round: 1
+  is_last_round: 1
+  source_url: MyString
+  source_description: MyString
+  created_by: MyString

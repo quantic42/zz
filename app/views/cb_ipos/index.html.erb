@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cb Ipos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ipo</th>
+      <th>Object</th>
+      <th>Valuation amount</th>
+      <th>Valuation currency code</th>
+      <th>Raised amount</th>
+      <th>Raised currency code</th>
+      <th>Public at</th>
+      <th>Stock symbol</th>
+      <th>Source url</th>
+      <th>Source description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cb_ipos.each do |cb_ipo| %>
+      <tr>
+        <td><%= cb_ipo.ipo %></td>
+        <td><%= cb_ipo.object %></td>
+        <td><%= cb_ipo.valuation_amount %></td>
+        <td><%= cb_ipo.valuation_currency_code %></td>
+        <td><%= cb_ipo.raised_amount %></td>
+        <td><%= cb_ipo.raised_currency_code %></td>
+        <td><%= cb_ipo.public_at %></td>
+        <td><%= cb_ipo.stock_symbol %></td>
+        <td><%= cb_ipo.source_url %></td>
+        <td><%= cb_ipo.source_description %></td>
+        <td><%= link_to 'Show', cb_ipo %></td>
+        <td><%= link_to 'Edit', edit_cb_ipo_path(cb_ipo) %></td>
+        <td><%= link_to 'Destroy', cb_ipo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cb Ipo', new_cb_ipo_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Object:</strong>
+  <%= @cb_degree.object %>
+</p>
+
+<p>
+  <strong>Degree type:</strong>
+  <%= @cb_degree.degree_type %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @cb_degree.subject %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @cb_degree.institution %>
+</p>
+
+<p>
+  <strong>Graduated at:</strong>
+  <%= @cb_degree.graduated_at %>
+</p>
+
+<%= link_to 'Edit', edit_cb_degree_path(@cb_degree) %> |
+<%= link_to 'Back', cb_degrees_path %>

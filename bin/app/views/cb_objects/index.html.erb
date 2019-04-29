@@ -1,0 +1,99 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cb Objects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entity type</th>
+      <th>Entity</th>
+      <th>Parent</th>
+      <th>Name</th>
+      <th>Normalized name</th>
+      <th>Permalink</th>
+      <th>Category code</th>
+      <th>Status</th>
+      <th>Founded at</th>
+      <th>Closed at</th>
+      <th>Domain</th>
+      <th>Homepage url</th>
+      <th>Twitter username</th>
+      <th>Logo url</th>
+      <th>Logo width</th>
+      <th>Logo height</th>
+      <th>Short description</th>
+      <th>Description</th>
+      <th>Overview</th>
+      <th>Tag list</th>
+      <th>Country code</th>
+      <th>State code</th>
+      <th>City</th>
+      <th>Region</th>
+      <th>First investment at</th>
+      <th>Last investment at</th>
+      <th>Investment rounds</th>
+      <th>Invested companies</th>
+      <th>First funding at</th>
+      <th>Last funding at</th>
+      <th>Funding rounds</th>
+      <th>Funding total usd</th>
+      <th>First milestone at</th>
+      <th>Last milestone at</th>
+      <th>Milestones</th>
+      <th>Relationships</th>
+      <th>Created by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cb_objects.each do |cb_object| %>
+      <tr>
+        <td><%= cb_object.entity_type %></td>
+        <td><%= cb_object.entity %></td>
+        <td><%= cb_object.parent %></td>
+        <td><%= cb_object.name %></td>
+        <td><%= cb_object.normalized_name %></td>
+        <td><%= cb_object.permalink %></td>
+        <td><%= cb_object.category_code %></td>
+        <td><%= cb_object.status %></td>
+        <td><%= cb_object.founded_at %></td>
+        <td><%= cb_object.closed_at %></td>
+        <td><%= cb_object.domain %></td>
+        <td><%= cb_object.homepage_url %></td>
+        <td><%= cb_object.twitter_username %></td>
+        <td><%= cb_object.logo_url %></td>
+        <td><%= cb_object.logo_width %></td>
+        <td><%= cb_object.logo_height %></td>
+        <td><%= cb_object.short_description %></td>
+        <td><%= cb_object.description %></td>
+        <td><%= cb_object.overview %></td>
+        <td><%= cb_object.tag_list %></td>
+        <td><%= cb_object.country_code %></td>
+        <td><%= cb_object.state_code %></td>
+        <td><%= cb_object.city %></td>
+        <td><%= cb_object.region %></td>
+        <td><%= cb_object.first_investment_at %></td>
+        <td><%= cb_object.last_investment_at %></td>
+        <td><%= cb_object.investment_rounds %></td>
+        <td><%= cb_object.invested_companies %></td>
+        <td><%= cb_object.first_funding_at %></td>
+        <td><%= cb_object.last_funding_at %></td>
+        <td><%= cb_object.funding_rounds %></td>
+        <td><%= cb_object.funding_total_usd %></td>
+        <td><%= cb_object.first_milestone_at %></td>
+        <td><%= cb_object.last_milestone_at %></td>
+        <td><%= cb_object.milestones %></td>
+        <td><%= cb_object.relationships %></td>
+        <td><%= cb_object.created_by %></td>
+        <td><%= link_to 'Show', cb_object %></td>
+        <td><%= link_to 'Edit', edit_cb_object_path(cb_object) %></td>
+        <td><%= link_to 'Destroy', cb_object, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cb object', new_cb_object_path %>

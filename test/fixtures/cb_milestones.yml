@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  object: one
+  milestone_at: 2019-03-26
+  milestone_code: MyString
+  description: MyString
+  source_url: MyString
+  source_description: MyString
+
+two:
+  object: two
+  milestone_at: 2019-03-26
+  milestone_code: MyString
+  description: MyString
+  source_url: MyString
+  source_description: MyString

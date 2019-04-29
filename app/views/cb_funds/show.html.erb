@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fund:</strong>
+  <%= @cb_fund.fund %>
+</p>
+
+<p>
+  <strong>Object:</strong>
+  <%= @cb_fund.object %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cb_fund.name %>
+</p>
+
+<p>
+  <strong>Funded at:</strong>
+  <%= @cb_fund.funded_at %>
+</p>
+
+<p>
+  <strong>Raised amount:</strong>
+  <%= @cb_fund.raised_amount %>
+</p>
+
+<p>
+  <strong>Raised currency code:</strong>
+  <%= @cb_fund.raised_currency_code %>
+</p>
+
+<p>
+  <strong>Source url:</strong>
+  <%= @cb_fund.source_url %>
+</p>
+
+<p>
+  <strong>Source description:</strong>
+  <%= @cb_fund.source_description %>
+</p>
+
+<%= link_to 'Edit', edit_cb_fund_path(@cb_fund) %> |
+<%= link_to 'Back', cb_funds_path %>

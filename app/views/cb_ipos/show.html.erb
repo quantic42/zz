@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ipo:</strong>
+  <%= @cb_ipo.ipo %>
+</p>
+
+<p>
+  <strong>Object:</strong>
+  <%= @cb_ipo.object %>
+</p>
+
+<p>
+  <strong>Valuation amount:</strong>
+  <%= @cb_ipo.valuation_amount %>
+</p>
+
+<p>
+  <strong>Valuation currency code:</strong>
+  <%= @cb_ipo.valuation_currency_code %>
+</p>
+
+<p>
+  <strong>Raised amount:</strong>
+  <%= @cb_ipo.raised_amount %>
+</p>
+
+<p>
+  <strong>Raised currency code:</strong>
+  <%= @cb_ipo.raised_currency_code %>
+</p>
+
+<p>
+  <strong>Public at:</strong>
+  <%= @cb_ipo.public_at %>
+</p>
+
+<p>
+  <strong>Stock symbol:</strong>
+  <%= @cb_ipo.stock_symbol %>
+</p>
+
+<p>
+  <strong>Source url:</strong>
+  <%= @cb_ipo.source_url %>
+</p>
+
+<p>
+  <strong>Source description:</strong>
+  <%= @cb_ipo.source_description %>
+</p>
+
+<%= link_to 'Edit', edit_cb_ipo_path(@cb_ipo) %> |
+<%= link_to 'Back', cb_ipos_path %>

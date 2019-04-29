@@ -1,0 +1,2 @@
+module CbInvestmentsHelper
+end

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cb Acquisitions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Acquisition</th>
+      <th>Acquiring object</th>
+      <th>Acquired object</th>
+      <th>Term code</th>
+      <th>Price amount</th>
+      <th>Price currency code</th>
+      <th>Acquired at</th>
+      <th>Source url</th>
+      <th>Source description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cb_acquisitions.each do |cb_acquisition| %>
+      <tr>
+        <td><%= cb_acquisition.acquisition %></td>
+        <td><%= cb_acquisition.acquiring_object %></td>
+        <td><%= cb_acquisition.acquired_object %></td>
+        <td><%= cb_acquisition.term_code %></td>
+        <td><%= cb_acquisition.price_amount %></td>
+        <td><%= cb_acquisition.price_currency_code %></td>
+        <td><%= cb_acquisition.acquired_at %></td>
+        <td><%= cb_acquisition.source_url %></td>
+        <td><%= cb_acquisition.source_description %></td>
+        <td><%= link_to 'Show', cb_acquisition %></td>
+        <td><%= link_to 'Edit', edit_cb_acquisition_path(cb_acquisition) %></td>
+        <td><%= link_to 'Destroy', cb_acquisition, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cb Acquisition', new_cb_acquisition_path %>

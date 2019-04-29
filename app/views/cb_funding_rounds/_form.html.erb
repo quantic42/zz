@@ -1,0 +1,117 @@
+<%= form_with(model: cb_funding_round, local: true) do |form| %>
+  <% if cb_funding_round.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cb_funding_round.errors.count, "error") %> prohibited this cb_funding_round from being saved:</h2>
+
+      <ul>
+      <% cb_funding_round.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :funding_round_id %>
+    <%= form.text_field :funding_round_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :object_id %>
+    <%= form.text_field :object_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funded_at %>
+    <%= form.date_select :funded_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funding_round_type %>
+    <%= form.text_field :funding_round_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funding_round_code %>
+    <%= form.text_field :funding_round_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :raised_amount_usd %>
+    <%= form.text_field :raised_amount_usd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :raised_amount %>
+    <%= form.text_field :raised_amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :raised_currency_code %>
+    <%= form.text_field :raised_currency_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pre_money_valuation_usd %>
+    <%= form.text_field :pre_money_valuation_usd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pre_money_valuation %>
+    <%= form.text_field :pre_money_valuation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pre_money_currency_code %>
+    <%= form.text_field :pre_money_currency_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :post_money_valuation_usd %>
+    <%= form.text_field :post_money_valuation_usd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :post_money_valuation %>
+    <%= form.text_field :post_money_valuation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :post_money_currency_code %>
+    <%= form.text_field :post_money_currency_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :participants %>
+    <%= form.number_field :participants %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_first_round %>
+    <%= form.number_field :is_first_round %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_last_round %>
+    <%= form.number_field :is_last_round %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_url %>
+    <%= form.text_field :source_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_description %>
+    <%= form.text_field :source_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

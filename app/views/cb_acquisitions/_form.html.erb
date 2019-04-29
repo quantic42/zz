@@ -1,0 +1,62 @@
+<%= form_with(model: cb_acquisition, local: true) do |form| %>
+  <% if cb_acquisition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cb_acquisition.errors.count, "error") %> prohibited this cb_acquisition from being saved:</h2>
+
+      <ul>
+      <% cb_acquisition.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :acquisition_id %>
+    <%= form.text_field :acquisition_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acquiring_object_id %>
+    <%= form.text_field :acquiring_object_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acquired_object_id %>
+    <%= form.text_field :acquired_object_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :term_code %>
+    <%= form.text_field :term_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_amount %>
+    <%= form.text_field :price_amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_currency_code %>
+    <%= form.text_field :price_currency_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acquired_at %>
+    <%= form.date_select :acquired_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_url %>
+    <%= form.text_field :source_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_description %>
+    <%= form.text_field :source_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

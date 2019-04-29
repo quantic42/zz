@@ -1,0 +1,15 @@
+current directory: /home/adtaylor43/CSC-4610-Fall-2018-SAIC-Collins-group/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+/usr/local/rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20190425-5795-1qcy97s.rb extconf.rb
+creating Makefile
+
+current directory: /home/adtaylor43/CSC-4610-Fall-2018-SAIC-Collins-group/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/adtaylor43/CSC-4610-Fall-2018-SAIC-Collins-group/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/adtaylor43/CSC-4610-Fall-2018-SAIC-Collins-group/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20190425-5795-vm6cv

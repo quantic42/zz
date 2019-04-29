@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Acquisition:</strong>
+  <%= @cb_acquisition.acquisition %>
+</p>
+
+<p>
+  <strong>Acquiring object:</strong>
+  <%= @cb_acquisition.acquiring_object %>
+</p>
+
+<p>
+  <strong>Acquired object:</strong>
+  <%= @cb_acquisition.acquired_object %>
+</p>
+
+<p>
+  <strong>Term code:</strong>
+  <%= @cb_acquisition.term_code %>
+</p>
+
+<p>
+  <strong>Price amount:</strong>
+  <%= @cb_acquisition.price_amount %>
+</p>
+
+<p>
+  <strong>Price currency code:</strong>
+  <%= @cb_acquisition.price_currency_code %>
+</p>
+
+<p>
+  <strong>Acquired at:</strong>
+  <%= @cb_acquisition.acquired_at %>
+</p>
+
+<p>
+  <strong>Source url:</strong>
+  <%= @cb_acquisition.source_url %>
+</p>
+
+<p>
+  <strong>Source description:</strong>
+  <%= @cb_acquisition.source_description %>
+</p>
+
+<%= link_to 'Edit', edit_cb_acquisition_path(@cb_acquisition) %> |
+<%= link_to 'Back', cb_acquisitions_path %>

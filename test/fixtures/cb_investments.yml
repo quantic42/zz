@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  funding_round: one
+  funded_object: one
+  investor_object: one
+
+two:
+  funding_round: two
+  funded_object: two
+  investor_object: two

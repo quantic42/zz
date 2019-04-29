@@ -1,0 +1,32 @@
+<%= form_with(model: cb_investment, local: true) do |form| %>
+  <% if cb_investment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cb_investment.errors.count, "error") %> prohibited this cb_investment from being saved:</h2>
+
+      <ul>
+      <% cb_investment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :funding_round_id %>
+    <%= form.text_field :funding_round_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funded_object_id %>
+    <%= form.text_field :funded_object_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :investor_object_id %>
+    <%= form.text_field :investor_object_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

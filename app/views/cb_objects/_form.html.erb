@@ -1,0 +1,202 @@
+<%= form_with(model: cb_object, local: true) do |form| %>
+  <% if cb_object.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cb_object.errors.count, "error") %> prohibited this cb_object from being saved:</h2>
+
+      <ul>
+      <% cb_object.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :entity_type %>
+    <%= form.text_field :entity_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :entity_id %>
+    <%= form.text_field :entity_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parent_id %>
+    <%= form.text_field :parent_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :normalized_name %>
+    <%= form.text_field :normalized_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :permalink %>
+    <%= form.text_field :permalink %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category_code %>
+    <%= form.text_field :category_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :founded_at %>
+    <%= form.date_select :founded_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :closed_at %>
+    <%= form.date_select :closed_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :domain %>
+    <%= form.text_field :domain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :homepage_url %>
+    <%= form.text_field :homepage_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twitter_username %>
+    <%= form.text_field :twitter_username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :logo_url %>
+    <%= form.text_field :logo_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :logo_width %>
+    <%= form.number_field :logo_width %>
+  </div>
+
+  <div class="field">
+    <%= form.label :logo_height %>
+    <%= form.number_field :logo_height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :short_description %>
+    <%= form.text_field :short_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :overview %>
+    <%= form.text_area :overview %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tag_list %>
+    <%= form.text_field :tag_list %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country_code %>
+    <%= form.text_field :country_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state_code %>
+    <%= form.text_field :state_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :region %>
+    <%= form.text_field :region %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_investment_at %>
+    <%= form.date_select :first_investment_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_investment_at %>
+    <%= form.date_select :last_investment_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :investment_rounds %>
+    <%= form.number_field :investment_rounds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :invested_companies %>
+    <%= form.number_field :invested_companies %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_funding_at %>
+    <%= form.date_select :first_funding_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_funding_at %>
+    <%= form.date_select :last_funding_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funding_rounds %>
+    <%= form.number_field :funding_rounds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funding_total_usd %>
+    <%= form.text_field :funding_total_usd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_milestone_at %>
+    <%= form.date_select :first_milestone_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_milestone_at %>
+    <%= form.date_select :last_milestone_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :milestones %>
+    <%= form.number_field :milestones %>
+  </div>
+
+  <div class="field">
+    <%= form.label :relationships %>
+    <%= form.number_field :relationships %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_by %>
+    <%= form.text_field :created_by %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

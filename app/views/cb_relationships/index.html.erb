@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cb Relationships</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Relationship</th>
+      <th>Person object</th>
+      <th>Relationship object</th>
+      <th>Start at</th>
+      <th>End at</th>
+      <th>Is past</th>
+      <th>Sequence</th>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cb_relationships.each do |cb_relationship| %>
+      <tr>
+        <td><%= cb_relationship.relationship %></td>
+        <td><%= cb_relationship.person_object %></td>
+        <td><%= cb_relationship.relationship_object %></td>
+        <td><%= cb_relationship.start_at %></td>
+        <td><%= cb_relationship.end_at %></td>
+        <td><%= cb_relationship.is_past %></td>
+        <td><%= cb_relationship.sequence %></td>
+        <td><%= cb_relationship.title %></td>
+        <td><%= link_to 'Show', cb_relationship %></td>
+        <td><%= link_to 'Edit', edit_cb_relationship_path(cb_relationship) %></td>
+        <td><%= link_to 'Destroy', cb_relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cb Relationship', new_cb_relationship_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Relationship:</strong>
+  <%= @cb_relationship.relationship %>
+</p>
+
+<p>
+  <strong>Person object:</strong>
+  <%= @cb_relationship.person_object %>
+</p>
+
+<p>
+  <strong>Relationship object:</strong>
+  <%= @cb_relationship.relationship_object %>
+</p>
+
+<p>
+  <strong>Start at:</strong>
+  <%= @cb_relationship.start_at %>
+</p>
+
+<p>
+  <strong>End at:</strong>
+  <%= @cb_relationship.end_at %>
+</p>
+
+<p>
+  <strong>Is past:</strong>
+  <%= @cb_relationship.is_past %>
+</p>
+
+<p>
+  <strong>Sequence:</strong>
+  <%= @cb_relationship.sequence %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @cb_relationship.title %>
+</p>
+
+<%= link_to 'Edit', edit_cb_relationship_path(@cb_relationship) %> |
+<%= link_to 'Back', cb_relationships_path %>

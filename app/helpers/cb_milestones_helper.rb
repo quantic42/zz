@@ -1,0 +1,2 @@
+module CbMilestonesHelper
+end

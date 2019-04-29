@@ -1,0 +1,57 @@
+<%= form_with(model: cb_relationship, local: true) do |form| %>
+  <% if cb_relationship.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cb_relationship.errors.count, "error") %> prohibited this cb_relationship from being saved:</h2>
+
+      <ul>
+      <% cb_relationship.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :relationship_id %>
+    <%= form.text_field :relationship_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :person_object_id %>
+    <%= form.text_field :person_object_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :relationship_object_id %>
+    <%= form.text_field :relationship_object_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_at %>
+    <%= form.date_select :start_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_at %>
+    <%= form.date_select :end_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_past %>
+    <%= form.number_field :is_past %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sequence %>
+    <%= form.number_field :sequence %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,47 @@
+<%= form_with(model: cb_milestone, local: true) do |form| %>
+  <% if cb_milestone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cb_milestone.errors.count, "error") %> prohibited this cb_milestone from being saved:</h2>
+
+      <ul>
+      <% cb_milestone.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_id %>
+    <%= form.text_field :object_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :milestone_at %>
+    <%= form.date_select :milestone_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :milestone_code %>
+    <%= form.text_field :milestone_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_url %>
+    <%= form.text_field :source_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source_description %>
+    <%= form.text_field :source_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module CbFundsHelper
+end

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cb Investments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Funding round</th>
+      <th>Funded object</th>
+      <th>Investor object</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cb_investments.each do |cb_investment| %>
+      <tr>
+        <td><%= cb_investment.funding_round %></td>
+        <td><%= cb_investment.funded_object %></td>
+        <td><%= cb_investment.investor_object %></td>
+        <td><%= link_to 'Show', cb_investment %></td>
+        <td><%= link_to 'Edit', edit_cb_investment_path(cb_investment) %></td>
+        <td><%= link_to 'Destroy', cb_investment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cb Investment', new_cb_investment_path %>

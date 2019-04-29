@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Funding round:</strong>
+  <%= @cb_investment.funding_round %>
+</p>
+
+<p>
+  <strong>Funded object:</strong>
+  <%= @cb_investment.funded_object %>
+</p>
+
+<p>
+  <strong>Investor object:</strong>
+  <%= @cb_investment.investor_object %>
+</p>
+
+<%= link_to 'Edit', edit_cb_investment_path(@cb_investment) %> |
+<%= link_to 'Back', cb_investments_path %>
